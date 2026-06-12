@@ -90,3 +90,28 @@ Generates PDF quotes containing customer info, spa model details, order data, an
 ```bash
 php artisan test
 ```
+
+## Screenshots
+
+Project screenshots live in `storage/app/public/screenshots/` using this naming pattern:
+
+```
+spa-cover-management-{page-slug}.png
+```
+
+| Screenshot | Page |
+|------------|------|
+| `spa-cover-management-dashboard.png` | Dashboard |
+| `spa-cover-management-customers.png` | Customers |
+| `spa-cover-management-orders.png` | Orders |
+| `spa-cover-management-view-order.png` | View order |
+| `spa-cover-management-edit-order.png` | Edit order |
+| `spa-cover-management-cover-preview.png` | Cover preview |
+
+Link public storage so screenshots are web-accessible:
+
+```bash
+php artisan storage:link
+```
+
+Then open e.g. `http://localhost:8000/storage/screenshots/spa-cover-management-dashboard.png`.
